@@ -26,5 +26,5 @@
 });`
 
 ## 4
-- A execução é iniciada na atribuição da variável who que recebe a execução da função identity. Dentro da função identity existe outra atribuição, desta vez da varíavel name recebendo o valor Jack, seguido de um alert com o valor de name, daí vem o primeiro valor impresso na tela. A função identity termina sua execução não retornando valor algum, portanto a variável who receberá undefined, que também será impresso na tela.
+- A execução é iniciada na atribuição da variável who que recebe a execução da função `identity`. Dentro da função `identity` existe outra atribuição, desta vez da variável `name` recebendo o valor `Jack`, seguido de um `alert` com o valor de `name`, daí vem o primeiro valor impresso na tela. A função `identity` termina sua execução não retornando valor algum, portanto a variável `who` receberá `undefined`, que também será impresso na tela.
 
