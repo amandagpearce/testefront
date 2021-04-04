@@ -1,25 +1,25 @@
 
-
 const anav = $('#cat-anav');
 let catName = anav.find('.anavmfe__accordion__item__name');
 let item;
 
-//cria a lista que irá conter os links
+// Creates list container
 $('#cat-fran-rows').prepend('<ul></ul>');
 
+// Appends list itens dinamically with filter titles 
 for (let x = 0; x < catName.length; x++) {
     item = $(catName[x]);
     item.clone().appendTo('#cat-fran-rows ul');
-  
+    
 }
-//cria os itens da lista com os links
+// Creates list of filter elements with links
 $('#cat-fran-rows ul div ').wrap('<li><a href="#"></a></li>');
 
+// Styling
 $('#cat-fran-rows ul').css('display', 'flex').css('list-style-type', 'none').css('flex-wrap', 'wrap');
-
 $('#cat-fran-rows ul li').css('margin', '0 15px');
 
-//monta a url a partir do clique no link 
+// Builds URL from click events on the dinamic list 
 $('#cat-fran-rows ul li a').on('click', function(){
     let category = $(this).text();
     console.log(category)
@@ -42,11 +42,9 @@ $('#cat-fran-rows ul li a').on('click', function(){
         url = url+'ready-to-ship?appliedRefinements='+ refinements;
         url = url.slice(0, -1);
         console.log(url);
-        //redireciona para o link com os parametros do filtro
+        // Redirects to URL with filter parameters
         window.location = url; 
         
         }
                     
-    })
-
-
+    });
